@@ -2,30 +2,69 @@
 .DS_Store
 Thumbs.db
 Desktop.ini
+*.lnk
 .vscode/
 .idea/
+*.swp
+*.swo
+
+# Secrets / local config
+.env
+.env.*
+*.secret
+*.secrets
+*.key
+*.pem
+*.pfx
+*.p12
+secrets/
+config.local.*
 
 # Python
 __pycache__/
-*.pyc
+*.py[cod]
+*.pyd
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
 .venv/
 venv/
+env/
 
-# Node
+# Node / frontend
 node_modules/
 .npm-cache/
+.npm/
+.pnpm-store/
+.next/
+.nuxt/
+.parcel-cache/
 
-# Browser / app runtime
+# Browser automation / local runtime
 browser-profile/
 playwright-report/
+playwright/.auth/
 
-# Logs and temp
+# Logs / temp / cache
 *.log
 logs/
+log/
 tmp/
 temp/
+.cache/
+coverage/
 
 # Build artifacts
-coverage/
-dist/
 build/
+dist/
+out/
+
+# Media processing scratch
+*.tmp
+*.bak
+*.orig
+
+# Archives
+*.zip
+*.7z
+*.rar
