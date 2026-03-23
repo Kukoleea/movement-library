@@ -1,0 +1,14 @@
+{
+  "name": "musclewiki-video-manifest",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node tests/run-tests.js",
+    "check": "node --check src/collect-musclewiki-manifest.js"
+  },
+  "dependencies": {
+    "playwright": "^1.58.2",
+    "xlsx": "^0.18.5"
+  }
+}
